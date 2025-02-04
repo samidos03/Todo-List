@@ -1,0 +1,120 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(181, 181, 167, 0.226), rgba(102, 102, 223, 0.385)), url(header.jpeg);
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.date-time{
+    position: absolute;
+    top: 10px;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    
+}
+
+section{
+    
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 500px;
+    height: auto;
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6),0 2px 4px rgba(163, 149, 149, 0.4);    
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: serif;
+}
+.full-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+input{
+    width:90%;
+    padding: 10px 5px;
+    margin: 5px;
+    height: 40px;
+    border: 0.1px solid rgb(66, 66, 66);
+    outline: 0;
+    border-radius: 10px 0 0 10px ;
+    background-color: #dad9d9;
+    color: black;
+
+}
+button{
+    width: 20%;
+    height: 40px;
+    border: 0;
+    background-image: linear-gradient(to bottom,rgb(181, 181, 167),rgb(102, 102, 223));
+    color: rgb(0, 0, 0);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+.task_style{
+    position:relative;
+    color:black;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px ;
+    cursor: pointer;
+}
+.task_style::before{
+    position: absolute;
+    margin: 5px;
+    content: " ";
+    text-align: center;
+    border: 0.2px solid rgb(0, 0, 0);
+    height: 20px;
+    width: 20px;
+    top:12px;
+    left:8px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+.task_click::before{
+    content: " ";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:12px;
+    left:8px;
+    background-image: url(Eo_circle_yellow_checkmark.svg.png); 
+    background-size: cover;
+    background-position: center;   
+}
+.task_click{
+    text-decoration: line-through;
+    opacity: 0.8;
+
+}
+span{
+    position: absolute;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:#555;
+    text-align: center;
+    line-height: 40pxp;
+    cursor: pointer;
+}
+span:hover{
+    background-color: #edeef0 ;
+
+}
+
